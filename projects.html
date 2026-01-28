@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body{
+    color:white;
+    min-height:100vh;
+    background:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url('Debora2.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+/* ===== NAVBAR (DISAMAKAN) ===== */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:15px 40px;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+nav h1{
+    font-size:22px;
+    letter-spacing:2px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#9b8cff;
+}
+
+/* ===== CONTENT ===== */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:120px 20px 60px;
+}
+
+.container h2{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.container p{
+    color:#ddd;
+    margin-bottom:40px;
+}
+
+/* ===== PROJECT CARD ===== */
+.project{
+    background:rgba(255,255,255,0.08);
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:30px;
+    backdrop-filter: blur(4px);
+}
+
+.project img{
+    width:100%;
+    max-height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.project h3{
+    margin-bottom:8px;
+}
+
+.project p{
+    color:#ccc;
+    font-size:14px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.7);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>PORTFOLIO</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="Pendidikan.html">Pendidikan</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- CONTENT -->
+<div class="container">
+    <p>Beberapa proyek yang pernah saya kerjakan.</p>
+
+    <!-- PROJECT 1 -->
+    <div class="project">
+        <img src="1000285626.jpg" alt="Project 1"
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project">
+        <img src="IMG-20251224-WA0101.jpg" alt="Project 2">
+        <p>Potret kebersamaan keluarga sebagai sumber motivasi, dukungan, dan semangat dalam setiap perjalanan hidup.</p>
+    </div>
+</div>
+
+<footer>
+    © 2026 Portfolio
+</footer>
+
+</body>
+</html>
