@@ -10,40 +10,40 @@
 
 <style>
 body{
-  /* RUNNING TEXT */
-.running-text {
-  background: #0d6efd;
-  color: #fff;
-  overflow: hidden;
-  white-space: nowrap;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1050;
-}
-
-.running-text span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: runtext 15s linear infinite;
-  font-weight: 500;
-}
-
-@keyframes runtext {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
-}
-
-/* AGAR NAVBAR TURUN */
-.navbar {
-  margin-top: 35px;
-}
   background:#f4f6f8;
   font-family: Arial, sans-serif;
 }
 
+/* RUNNING TEXT */
+.running-text{
+  background:#0d6efd;
+  color:#fff;
+  overflow:hidden;
+  white-space:nowrap;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1050;
+  padding:6px 0;
+}
+.running-text span{
+  display:inline-block;
+  padding-left:100%;
+  animation:runtext 15s linear infinite;
+  font-weight:500;
+}
+@keyframes runtext{
+  from{transform:translateX(0);}
+  to{transform:translateX(-100%);}
+}
+
 /* NAVBAR */
-.navbar-brand{font-weight:bold}
+.navbar{
+  margin-top:36px;
+}
+.navbar-brand{
+  font-weight:bold;
+}
 
 /* HERO */
 .hero{
@@ -75,7 +75,6 @@ body{
   object-fit:cover;
   display:block;
 }
-}
 .info-card .card-body{
   padding:20px;
   text-align:center;
@@ -93,20 +92,25 @@ footer{
 
 <body>
 
+<!-- RUNNING TEXT -->
+<div class="running-text">
+  <span>Selamat Datang di Website Saya | Tuhan Yesus Memberkati 🙏 | Terima Kasih Sudah Berkunjung</span>
+</div>
+
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-<div class="container">
-<a class="navbar-brand fw-bold" href="index.html">PORTOFOLIO</a>
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="nav">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-<li class="nav-item"><a class="nav-link" href="pendidikan.html">pendidikan</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">PORTOFOLIO</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="pendidikan.html">Pendidikan</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -118,33 +122,31 @@ footer{
   <p>Di Website Saya</p>
 </section>
 
-<!-- VISI MISI PRESTASI (DENGAN GAMBAR) -->
+<!-- VISI MISI PRESTASI -->
 <div class="container my-5">
   <div class="row g-4">
 
-    <!-- VISI -->
+    <!-- MY FAMILY -->
     <div class="col-md-4">
       <div class="info-card">
-        <img src="img/foto_keluarga.jpg">
+        <img src="img/foto_keluarga.jpg" alt="Keluarga">
         <div class="card-body">
           <h4>MY FAMILY</h4>
         </div>
       </div>
     </div>
 
-    <!-- MISI -->
+    <!-- TENTANG SAYA -->
     <div class="col-md-4">
       <div class="info-card">
-        <img src="img/20251004203227017.jpg">
+        <img src="img/20251004203227017.jpg" alt="Tentang Saya">
         <div class="card-body">
           <h4>Tentang Saya</h4>
-          <p>Saya adalah seorang pelajar yang memiliki semangat belajar dan cita-cita untuk terus berkembang.
-Website ini dibuat sebagai media untuk memperkenalkan diri dan berbagi pengalaman</p>
-        </div>
-      </div>
-    </div>
-
-
+          <p>
+            Saya adalah seorang pelajar yang memiliki semangat belajar dan cita-cita
+            untuk terus berkembang. Website ini dibuat sebagai media untuk
+            memperkenalkan diri dan berbagi pengalaman.
+          </p>
         </div>
       </div>
     </div>
@@ -157,7 +159,7 @@ Website ini dibuat sebagai media untuk memperkenalkan diri dan berbagi pengalama
   © 2026 DEBORA | Website Saya
 </footer>
 
-<!-- Bootstrap JS (WAJIB untuk tombol ☰) -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
